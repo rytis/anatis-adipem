@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="negative_countdown.js"></script>
+  </head>
+  <body>
+    <h1>Countdown solver</h1>
+    <p>This is a numbers countdown game solver. Below are rules of the game (sligthly modified version of the <a href="http://en.wikipedia.org/wiki/Countdown_(game_show)">game show</a>):</p>
+    <ul>
+        <li>You are given a set of numbers (both positive and negative numbers are allowed)</li>
+        <li>You are also given a target number</li>
+        <li>The only allowed operations are: `+` (add), `-` (subtract), `*` (multiply) and `/` (divide)</li>
+        <li>All numbers must be used</li>
+        <li>Each number can be used only once</li>
+        <li>Operations can be re-used (for example, two ior more additions in the equation are allowed)</li>
+    </ul>
+    <form id="numbers_form">
+      <p><label>Comma separated list of numbers: <input id="numbers_text" type="text" size="50"></label></p>
+      <p><label>Target number: <input id="result_text" type="text" size="6"></label></p>
+      <p><input type="submit" value="Click to find solution"></p>
+    </form>
+    <p>
+      <div id="results"></div>
+    </p>
+  </body>
+</html>
